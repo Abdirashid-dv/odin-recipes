@@ -13,8 +13,8 @@
     <nav>
       <ul class="nav-items">
         <li class="logo"><a href="./index.html">OdinRecipe</a></li>
-        <li>Recipes</li>
-        <li>Contact</li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="./index.html">Contact</a></li>
       </ul>
     </nav>
 
@@ -28,7 +28,7 @@
   </section>
 
   <!-- Recipes -->
-  <section class="recipes">
+  <section class="recipes" id="recipes">
     <h2 class="title">Recipes</h2>
     <div class="container">
       <div class="item">
@@ -102,6 +102,19 @@
         <!-- btn -->
         <button class="btn"> <a href="./recipes/manti.html">Read More</a></button>
 
+        <!-- Scrolling smoothly  -->
+        <script>
+          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+              });
+            });
+          });
+
+        </script>
       </div>
     </div>
   </section>
