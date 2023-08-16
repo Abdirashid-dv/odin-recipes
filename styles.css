@@ -47,7 +47,7 @@ li a {
   scroll-behavior: smooth;
 }
 
-.nav-items > li a::before {
+.nav-items > li:not(:first-child) a::before {
   content: "";
   width: 90%;
   height: 2px;
@@ -60,11 +60,11 @@ li a {
   transform-origin: 0 50%;
 }
 
-.nav-items > li a:hover::before {
+.nav-items > li:not(:first-child) a:hover::before {
   transform: scale3d(1, 1, 1);
 }
 
-.nav-items > li a::before {
+.nav-items > li:not(:first-child) a::before {
   background: #fdfdfd;
   transform-origin: 0 50%;
 }
@@ -174,11 +174,38 @@ h3.food-name {
   gap: 30px;
 }
 
+/* CSS */
 .btn {
-  font-size: 14px;
-  margin-top: 45px;
-  padding: 10px 30px;
+  background-color: #d79913;
+  border-radius: 12px;
+  max-width: 200px;
+  color: #000;
   cursor: pointer;
+  font-weight: bold;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 20px 30px;
+  text-align: center;
+  transition: 200ms;
+  margin-top: 45px;
+  width: 100%;
+  border: 0;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn:not(:disabled):hover,
+.btn:not(:disabled):focus {
+  outline: 0;
+  background: #926709;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.2), 0 3px 8px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn:disabled {
+  filter: saturate(0.2) opacity(0.5);
+  -webkit-filter: saturate(0.2) opacity(0.5);
+  cursor: not-allowed;
 }
 .btn a {
   text-decoration: none;
