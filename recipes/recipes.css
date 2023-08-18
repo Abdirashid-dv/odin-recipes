@@ -196,3 +196,60 @@
   font-size: 22px;
   color: #000000;
 }
+
+/* Mobile styles */
+
+@media only screen and (min-width: 300px) and (max-width: 960px) {
+  .recipe {
+    margin: 0;
+  }
+
+  .food-name h2 {
+    font-size: 2em;
+  }
+  .recipe > .images {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .recipe > .images img {
+    width: 100%;
+    height: 200px;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .details {
+    width: 100%;
+    height: 400px;
+  }
+  .description {
+    font-size: 18px;
+  }
+  .description p {
+    font-size: 14px;
+  }
+  .recipe > .container .nutrition {
+    margin: 0;
+    height: 400px;
+    width: 100%;
+  }
+  .nutrition > .nutrition-facts {
+    width: 100%;
+  }
+  .recipe > .ingredients,
+  .recipe > .directions {
+    margin: 50px 20px;
+  }
+  .recipe > .directions ul {
+    width: 100%;
+  }
+  .back-home {
+    background-color: #f6f1f1;
+    right: 20px;
+  }
+}
