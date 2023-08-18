@@ -75,26 +75,25 @@ li.logo {
 .cooker {
   position: absolute;
   bottom: 0;
-  right: 0px;
+  right: 0;
 }
 .cooker img {
+  width: 100%;
   margin-top: 100px;
   height: 600px;
 }
 .text {
+  display: flex;
+  align-items: center;
+  height: 70vh;
   width: 50px;
   margin: 30px 50px;
   color: #231f20;
 }
 .text h1 {
-  font-size: 7em;
-
+  font-size: 5em;
   font-weight: 700;
 }
-#recipe {
-  padding-left: 60px;
-}
-
 /* Section 2 */
 .recipes {
   margin: 10px;
@@ -221,28 +220,70 @@ h3.food-name {
   margin-top: 45px;
 }
 
-@media (max-width: 1250px) {
-  .cooker img {
-    height: 400px;
-    bottom: 0;
-    right: 0;
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  .header {
+    margin: 0;
+    border-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
   }
-  .text {
-    width: 100%;
-    overflow: hidden;
+
+  nav {
+    padding: 20px;
+  }
+
+  .nav-items {
+    font-size: 16px;
   }
   .text h1 {
-    font-size: 4em;
+    font-size: 2em;
   }
-  #recipe {
-    padding: 0;
+  .cooker img {
+    height: 400px;
+  }
+  .text {
+    margin: 50px 0px 0 0px;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    font-size: 15px;
+  }
+  #recipetext {
+    padding: 10px;
+  }
+  .recipes {
+    margin: 0;
+    padding: 20px;
+  }
+
+  h2.title {
+    font-size: 2em;
   }
   .container {
     flex-direction: column;
     align-items: center;
   }
+
+  .food-img {
+    height: 100px;
+    width: 100px;
+  }
   .item {
-    margin-bottom: 100px;
-    width: 400px;
+    width: 300px;
+    height: 400px;
+  }
+  h3.food-name {
+    font-size: 15px;
+  }
+  .food-description {
+    font-size: 15px;
+  }
+  .details p {
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .details h4 {
+    font-size: 15px;
   }
 }
