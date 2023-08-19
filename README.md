@@ -1,4 +1,4 @@
-# Odin Recipe Project Readme
+# Odin Recipe Project
 
 The Odin Recipe Project is a simple website built using HTML and CSS. This project allows users to browse and explore a collection of recipes. Whether you're a seasoned chef or a beginner in the kitchen, this project is designed to help you discover new dishes and get inspired. This README file provides an overview of the project and highlights what you learned during the development process.
 
