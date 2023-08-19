@@ -231,11 +231,11 @@
     font-size: 18px;
   }
   .description p {
-    font-size: 14px;
+    font-size: 16px;
   }
   .recipe > .container .nutrition {
     margin: 0;
-    height: 400px;
+    height: 300px;
     width: 100%;
   }
   .nutrition > .nutrition-facts {

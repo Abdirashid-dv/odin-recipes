@@ -102,23 +102,31 @@
 
         <!-- btn -->
         <button class="btn"> <a href="./recipes/manti.html">Read More</a></button>
-
-        <!-- Scrolling smoothly  -->
-        <script>
-          document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-              e.preventDefault();
-
-              document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-              });
-            });
-          });
-
-        </script>
       </div>
     </div>
   </section>
+
+  <footer class="footer">
+    <h4 class="footer-text">Recipe project by: <a
+        href="https://www.linkedin.com/in/abdulrashid-mowlid-a1937915a/">Abdirashid</a></h4>
+  </footer>
+
+
+
+
+  <!-- Scrolling smoothly  -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+  </script>
 </body>
 
 </html>
